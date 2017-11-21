@@ -13,5 +13,6 @@ source /usr/local/osmosix/service/utils/agent_util.sh
 actionSendMessage "Action - remoteBackup started" 
 
 #rsync -avz  -e "ssh " /path/to/yourfile user@backupserver.com:/backup/
-rsync -v -e ssh /home/cliqruser/DATA bharper@host2.bakop.com:.
+echo "MetacloudSE1" >passwd
+rsync -v -e ssh /home/cliqruser/DATA bharper@host2.bakop.com:. < passwd
 echo "backup for $(date) "| mail -s "backup complete" biharper@cisco.com
