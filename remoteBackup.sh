@@ -10,6 +10,7 @@ source /usr/local/osmosix/etc/userenv
 source /usr/local/osmosix/service/utils/cfgutil.sh
 source /usr/local/osmosix/service/utils/agent_util.sh
 
+actionSendMessage "Action - remoteBackup started" 
 
 #rsync -avz  -e "ssh " /path/to/yourfile user@backupserver.com:/backup/
 echo "backup for $(date) "| mail -s "backup complete" biharper@cisco.com
