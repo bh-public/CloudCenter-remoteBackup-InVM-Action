@@ -1,7 +1,8 @@
 #!/bin/bash
 #
 # This is a Cisco Cloud Center Action Lib Example
-#
+# Execute path is: 
+#   https://raw.githubusercontent.com/bh-public/remoteBackup/master/FTPremoteBackup.sh
 
 exec > >(tee -a /var/tmp/remoteBackup-init_$$.log) 2>&1
 
