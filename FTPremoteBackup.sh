@@ -13,6 +13,8 @@ source /usr/local/osmosix/service/utils/agent_util.sh
 
 actionSendMessage "Action - FTPremoteBackup started" 
 
+sudo yum install ftp -y
+
 # Define our env vars
 HOST='13.57.9.139'
 USER='selab'
@@ -27,4 +29,4 @@ quit
 END_SCRIPT
 exit 0
 
-echo "backup for $(date) "| mail -s "backup complete" biharper@cisco.com
+# echo "backup for $(date) "| mail -s "backup complete" biharper@cisco.com
