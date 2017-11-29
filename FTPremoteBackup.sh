@@ -13,9 +13,9 @@ source /usr/local/osmosix/service/utils/agent_util.sh
 actionSendMessage "Action - FTPremoteBackup started" 
 
 # Define our env vars
-HOST='host2.bakop.com'
-USER='bharper'
-PASSWD='MetacloudSE1'
+HOST='13.57.9.139'
+USER='selab'
+PASSWD='welcome2cliqr'
 FILE='DATA'
 # Execute the FTP of DATA
 ftp -n $HOST <<END_SCRIPT
