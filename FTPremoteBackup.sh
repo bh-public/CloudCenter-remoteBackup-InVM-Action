@@ -19,7 +19,8 @@ source /usr/local/osmosix/service/utils/agent_util.sh
 HOST='13.57.9.139'
 USER='selab'
 PASSWD='welcome2cliqr'
-FILE='/home/cliqruser/DATA'
+#FILE='/home/cliqruser/DATA'
+FILE='DATA'
 # Execute the FTP of DATA
 ftp -inv $HOST <<EOF
 user $USER $PASSWORD
