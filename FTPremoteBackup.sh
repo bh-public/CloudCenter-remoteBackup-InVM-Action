@@ -20,7 +20,7 @@ HOST='13.57.9.139'
 USER='selab'
 PASSWD='welcome2cliqr'
 #FILE='/home/cliqruser/DATA'
-cd ~cliquser
+cd ~cliqruser
 FILE='DATA'
 # Execute the FTP of DATA
 ftp -inv $HOST <<EOF
