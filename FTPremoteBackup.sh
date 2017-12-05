@@ -19,14 +19,11 @@ sudo yum install ftp -y
 HOST='13.57.9.139'
 USER='selab'
 PASSWD='welcome2cliqr'
-FILE='DATA'
+FILE='/home/cliqruser/DATA'
 # Execute the FTP of DATA
-ftp -n $HOST <<END_SCRIPT
-quote USER $USER
-quote PASS $PASSWD
-put $FILE
-quit
-END_SCRIPT
-exit 0
+ftp -inv $HOST <<EOF
+user $USER $PASSWORD
+put DATA
+bye
 
 # echo "backup for $(date) "| mail -s "backup complete" biharper@cisco.com
