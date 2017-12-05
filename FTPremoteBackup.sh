@@ -11,9 +11,9 @@ source /usr/local/osmosix/etc/userenv
 source /usr/local/osmosix/service/utils/cfgutil.sh
 source /usr/local/osmosix/service/utils/agent_util.sh
 
-actionSendMessage "Action - FTPremoteBackup started" 
+#actionSendMessage "Action - FTPremoteBackup started" 
 
-sudo yum install ftp -y
+#sudo yum install ftp -y
 
 # Define our env vars
 HOST='13.57.9.139'
@@ -23,7 +23,7 @@ FILE='/home/cliqruser/DATA'
 # Execute the FTP of DATA
 ftp -inv $HOST <<EOF
 user $USER $PASSWORD
-put DATA
+put $FILE
 bye
 
 # echo "backup for $(date) "| mail -s "backup complete" biharper@cisco.com
