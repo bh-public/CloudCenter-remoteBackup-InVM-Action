@@ -24,9 +24,8 @@ cd ~cliquser
 FILE='DATA'
 # Execute the FTP of DATA
 ftp -inv $HOST <<EOF
-user $USER $PASSWORD
+user $USER $PASSWD
 put $FILE
 EOF
-quit
 
 # echo "backup for $(date) "| mail -s "backup complete" biharper@cisco.com
