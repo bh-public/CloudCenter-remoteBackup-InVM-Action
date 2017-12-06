@@ -21,11 +21,11 @@ USER='selab'
 PASSWD='welcome2cliqr'
 #FILE='/home/cliqruser/DATA'
 cd ~cliqruser
-#FILE='DATA'
+FILE='DATA'
 # Execute the FTP of DATA
 ftp -inv $HOST <<EOF
 user $USER $PASSWD
-put $FILE
+put $FILE $DFILE
 EOF
 
 # echo "backup for $(date) "| mail -s "backup complete" biharper@cisco.com
