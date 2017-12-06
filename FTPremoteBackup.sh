@@ -21,7 +21,7 @@ USER='selab'
 PASSWD='welcome2cliqr'
 #FILE='/home/cliqruser/DATA'
 cd ~cliqruser
-FILE='DATA'
+#FILE='DATA'
 # Execute the FTP of DATA
 ftp -inv $HOST <<EOF
 user $USER $PASSWD
