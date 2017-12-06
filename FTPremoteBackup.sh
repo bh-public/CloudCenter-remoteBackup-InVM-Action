@@ -25,7 +25,7 @@ cd ~cliqruser
 # Execute the FTP of DATA
 ftp -inv $HOST <<EOF
 user $USER $PASSWD
-put $FILE
+put $FILE /usr/selab
 EOF
 
 # echo "backup for $(date) "| mail -s "backup complete" biharper@cisco.com
