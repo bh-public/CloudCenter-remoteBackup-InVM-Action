@@ -26,6 +26,7 @@ FILE='DATA'
 ftp -inv $HOST <<EOF
 user $USER $PASSWD
 put $FILE $DFILE
+ls
 EOF
 
 # echo "backup for $(date) "| mail -s "backup complete" biharper@cisco.com
