@@ -22,7 +22,7 @@ source /usr/local/osmosix/service/utils/agent_util.sh
 # Define our env vars
 #HOST='13.57.9.139'
 HOST='52.53.181.141'
-USER='selab'
+USER='selab1'
 PASSWD='welcome2cliqr'
 #FILE='/home/cliqruser/DATA'
 cd ~cliqruser
